@@ -5,7 +5,7 @@
     "lib": ["es6"],                                
     "allowJs": true,                               
     "outDir": "./dist",                            
-    "rootDir": ".",                             
+    "rootDir": "src",                             
     "removeComments": true,                        
     "strict": true,                                
     "typeRoots": [
@@ -18,10 +18,10 @@
     "emitDecoratorMetadata": true,              
     "skipLibCheck": true,                          
     "forceConsistentCasingInFileNames": true,
-    "baseUrl":".",
+    "baseUrl":"src",
     "paths": {
-      "@controllers/*":["./src/controller/*"],
-      "@models/*":["./src/models/*"]
+      "@controllers/*":["controller/*"],
+      "@models/*":["models/*"]
     }
   },
   "include":[
