@@ -20,8 +20,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl":"src",
     "paths": {
-      "@useCases/*":["useCases/*"],
-      "@domain/*":["domain/*"]
+      "@domain/*":["domain/*"],
+      "@data/*":["data/*"]
     }
   },
   "include": [
