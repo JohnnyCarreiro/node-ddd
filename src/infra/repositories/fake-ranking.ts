@@ -1,9 +1,9 @@
 import { LoadLastRanginkRepository } from '@data/contracts'
-import { RankingScore } from '@domain/entities'
+import { RankingScoreModel } from '@data/models'
 import { ranking } from '@infra/dataSources'
 
 export class FakeRankingRepository implements LoadLastRanginkRepository {
-  async loadLastRanking (): Promise<RankingScore[]> {
+  async loadLastRanking (): Promise<RankingScoreModel[]> {
     return ranking.map(item => ({
       player: {
         name: item.user.name,
