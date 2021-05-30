@@ -8,12 +8,8 @@ export class LoadLastRanginkController implements Controller {
   async handle (): Promise<HttpResponse<RankingScoreViewModel[]>> {
     try {
       const ranking = await this.lastRankingLoader.load()
-      const viewModels = ranking.map(item => ({
-        ...item,
-        matchDate: item.matchDate.toISOString()
-      }))
 
-      return success(viewModels)
+      return success(RankingScoreViewModel.mapColection(ranking))
     } catch (error) {
       return serverError(error)
     }
