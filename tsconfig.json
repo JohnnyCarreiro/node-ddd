@@ -23,7 +23,8 @@
       "@domain/*":["domain/*"],
       "@data/*":["data/*"],
       "@infra/*":["infra/*"],
-      "@presentation/*": ["presentation/*"]
+      "@presentation/*": ["presentation/*"],
+      "@main/*": ["main/*"]
     }
   },
   "include": [
